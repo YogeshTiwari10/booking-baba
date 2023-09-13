@@ -1,0 +1,141 @@
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+
+    @media screen and (max-width: 1000px) {
+        justify-content: space-between; 
+    }
+}
+
+.logo{
+    img{
+        width: 200px;
+    }
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.navbar-menu-link{
+    margin: 0px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.active {
+    // background: linear-gradient(97.13deg, #7d95c6 2.78%, #9010B0 97.22%);
+    background-color: #A569BD;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    border-bottom: 3px solid #A569BD ;
+    border-radius: 3px;
+    opacity: 1 !important;
+}
+
+
+
+.navbar-menu-mobile {
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: #3498DB;
+    background: black;
+    margin-right: 1rem;
+
+    svg {
+        width: 80%;
+        height: 80%;
+        color: white;
+    }
+
+    div {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+        padding: 1rem;
+
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+
+        background: wh;
+        background-color: white;
+        background-size: cover;
+        background-repeat: repeat;
+
+        box-shadow: 0 0 20px rgb(168, 168, 168, 0.15);
+
+        svg {
+            width: 35px;
+            height: 35px;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+
+
+            li {
+                margin: 1rem;
+                color: black;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 500;
+
+                }
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}

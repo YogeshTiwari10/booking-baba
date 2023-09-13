@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+.home{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.home-banner-container{
+    overflow: hidden;
+}
+
+.banner-heading{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
+    
+    @media screen and (max-width: 1000px) {
+        left: 10%;
+        font-size: 30px;
+    }
+
+    .typewriter{
+       color:#A569BD;
+       font-weight: 600;
+       margin-top: 0px;
+    }
+
+    p{
+        font-weight: 700;
+        margin-bottom: 0px;
+    }    
+}
+
+.home-banner{
+    // background-image: url('../../assets/home-banner.jpg');
+    background: url(../../assets/background.png) repeat-x;
+    background-size: contain;
+    height: 80vh;
+    width: 14676px;
+    animation: slide 200s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-7338px);
+    }
+}
+
+.walking-man{
+    height: 50%;
+    max-height: 225px;
+    position: absolute;
+    bottom: 8%;
+    left: 40%;
+
+    @media screen and (max-width: 640px) {
+        max-height: 175px;
+        left: 20%;
+    }
+}
