@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+.Single_Movie{
+    width: 100%;
+}
+
+.single_movie_container{
+    background: url('../../assets/movie-cover2.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+}
+
+.movie-poster{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0px;
+    img{
+        width: 250px;
+        height: 350px;
+    }
+}
+
+.incinemas{
+    width: 250px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #E5E5E5;
+
+    p{
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+    }
+}
+
+.movie-data{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: white;
+    align-items:flex-start;
+    justify-content:left;
+}
+
+.movie-title{
+    font-size: 50px;
+    font-family: 'Stylish', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.movie-plot{
+    width: 400px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.movie-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+    margin: 8px 0px;
+}
+
+.movie-language{
+    background-color: #E5E5E5;
+    padding: 5px 18px;
+    color:black;
+    font-weight: 500;
+    font-family: 'Stylish', sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.movie-length{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.book-btn{
+    background-color: rgb(248, 68, 100);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-family: 'Stylish', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 8px 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    &:hover{
+        background-color: rgb(260, 45, 105);
+    }
+}

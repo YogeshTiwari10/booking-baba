@@ -36,7 +36,6 @@
 }
 
 .home-banner{
-    // background-image: url('../../assets/home-banner.jpg');
     background: url(../../assets/background.png) repeat-x;
     background-size: contain;
     height: 80vh;
@@ -66,3 +65,107 @@
         left: 20%;
     }
 }
+
+
+
+// Movie Lists 
+
+.movie-list-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF0F1 ;
+}
+
+
+.movie-list-heading{
+    background: url('../../assets/home-banner.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 2rem auto;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    h2{
+        color: white;
+        font-family: 'Stylish', sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+    }
+}
+
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin: auto;
+}
+.product-card{
+    cursor: pointer;
+     transform: scale(1, 1);
+     transition: transform 0.5s ease;
+    color: #324d67;
+   
+   }
+
+   .ratings{
+    position: absolute;
+    margin: -40px 0px;
+    height: 40px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: #000000;
+    width: 100%;
+    text-indent: 10px;
+    font-size: 19px;
+    color: #ECF0F1;
+   }
+
+   .product-image{
+     border-radius: 15px;
+    background-color: #ebebeb;
+    width: 250px;
+    height: 400px;
+     transform: scale(1, 1);
+     transition: transform 0.8s ease;
+
+     &:hover{
+        transform: scale(1.1,1.1)
+     }
+   }
+   
+   .product-name{
+     text-align: left;
+     margin-top: 1rem;
+     margin-bottom: 0px;
+     width: 100%;
+     color: #000000 !important;
+     font-size: 1.6rem;
+     font-family: 'Merriweather', serif;
+     text-decoration: none;
+
+     @media screen and (max-width: 320px) {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+   }
+
+
+   .yellow_border{
+    width: 100px;
+    margin: 3rem 0px;
+    border-bottom: 4px solid #f38315;
+   }
