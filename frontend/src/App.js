@@ -6,6 +6,8 @@ import Navbar from './component/Navbar/Navbar';
 import ScrollToTop from './component/ScrollToTop/ScrollToTop';
 import SingleMovies from './Pages/SingleMovies/SingleMovies';
 import Footer from './component/Footer/Footer';
+import Location from './Pages/Location/Location';
+import ShowTime from './Pages/ShowTime/ShowTime';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
     <Route path='/' element={<Home />} />
     <Route path='/home' element={<Home />} />
     <Route path='/movie/:slug' element={<SingleMovies />} />
+    <Route path='/location/:slug' element={<Location />} />
+    <Route path='/showtime/:slug/:type' element={<ShowTime />} />
     <Route path='*' element={<Error />} />
    </Routes>
    <Footer />

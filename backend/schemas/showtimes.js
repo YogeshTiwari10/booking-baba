@@ -15,10 +15,10 @@ export default defineType({
             to:[{type:"movie"}]
         },
         {
-            title:"Theatre",
-            name:"theatre",
+            title:"Location",
+            name:"location",
             type:"reference",
-            to:[{type:"theatre"}]
+            to:[{type:"location"}]
         },
         {
             title:"Row",

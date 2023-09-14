@@ -14,6 +14,20 @@ export default defineType({
             title:"Image",
             name:'image',
             type:'string'
-        }
+        },
+        {
+            name:'theatre',
+            title:'Theatre',
+            type:'string'
+        },
+       { name: 'movie',
+      type: 'array',
+      of: [{
+            title:"Movie",
+            name:"movie",
+            type:"reference",
+            to:[{type:"movie"}]
+        }]
+    },
     ]
 })
