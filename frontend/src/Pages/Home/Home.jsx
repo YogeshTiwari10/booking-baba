@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
         client.fetch(
-          `*[_type == "movie"]
+          `*[_type == "movie"] | order(_createdAt desc)
           {
             title,
             slug,
@@ -22,7 +22,7 @@ const Home = () => {
             original_language,
             genre,
             ratings,
-          }`
+          } [0...6]`
         ).then((data) => setValues(data)).catch(console.error)
       }, [])
   return (

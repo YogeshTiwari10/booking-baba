@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams} from 'react-router-dom'
+import { Link, useParams} from 'react-router-dom'
 import {client} from '../../client'
 import { AiFillStar } from 'react-icons/ai';
 import { PiDotOutlineFill } from 'react-icons/pi';
@@ -41,7 +41,7 @@ const SingleMovies = () => {
                 <p className='movie-rating'><AiFillStar style={{color: "red",marginRight:"5px", marginLeft:"5px", width:"40px", height:"40px"}}/> {movies?.ratings} / 10 <span style={{margin:"0px 10px"}}> IMDB Ratings</span></p>
                 <p className="movie-language">{movies?.original_language}</p>
                 <p className='movie-length'>{movies?.length} <PiDotOutlineFill style={{width:"40px", height:"40px"}}/> {movies?.genre} <PiDotOutlineFill style={{width:"40px", height:"40px"}}/> {movies?.release_date}</p>
-                <button className='book-btn'>Book Tickets</button>
+                <button className='book-btn'> <Link to={`/location/${movies?.slug.current}`} style={{textDecoration:"none", color:"white"}}>Book Tickets</Link></button>
             </div>
         </div>
 
