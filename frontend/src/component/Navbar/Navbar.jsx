@@ -5,13 +5,14 @@ import {NavLink, Link} from 'react-router-dom'
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
-import logo from '../../assets/logo.png'
+// import logo from '../../assets/logo.png'
+import booking from '../../assets/Booking1.png'
 
 const Navbar = () => {
   const [toggle, setToggle ] = useState(false)
   return (
     <div className="navbar">
-        <div className="logo"> <Link to="/home" ><img src={logo} alt="logo" /></Link></div>
+        <div className="logo"> <Link to="/home" ><img src={booking} alt="logo" /></Link></div>
         <ul className='navbar-menu'>
         {[ 'home','Movies', 'About Us', 'Contact Us'].map((items) =>
         <li className='navbar-menu-link' key={`link-${items}`}>
@@ -28,7 +29,7 @@ const Navbar = () => {
           >
             <HiX onClick={()=>setToggle(false)} />
             <ul>
-            <Link to="/" ><img src={logo} alt="logo" style={{width: '200px'}} onClick={()=>setToggle(false)} /></Link>
+            <Link to="/" ><img src={booking} alt="logo" style={{width: '200px'}} onClick={()=>setToggle(false)} /></Link>
             {[ 'home','Movies', 'About Us', 'Contact Us'].map((items) =>
           <li key={items}>
             <NavLink to={`/${items}`} onClick={()=>setToggle(false)}  > {items} </NavLink>
